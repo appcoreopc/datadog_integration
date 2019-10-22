@@ -1,0 +1,12 @@
+
+
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+
+namespace LogProducer.Provider
+{
+    interface IProviderMetric
+    {
+        Task SendMetricData(ILogger logger, string message);
+    }
+}
